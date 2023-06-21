@@ -1,0 +1,17 @@
+language: java
+jdk:
+  - openjdk11
+
+matrix:
+  include:
+    - name: 'Aplicación 1'
+      before_script:
+        - cd socket_application
+      script:
+        - mvn test
+
+    - name: 'Aplicación 2'
+      before_script:
+        - cd socket_server
+      script:
+        - mvn test
