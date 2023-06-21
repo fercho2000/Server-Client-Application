@@ -1,0 +1,16 @@
+language: java
+jdk:
+  - openjdk11
+
+before_install:
+  - chmod +x gradlew
+
+# Comandos de compilación y pruebas utilizando Gradle 3.2.0
+script:
+  - ./gradlew compileJava
+  - ./gradlew test
+# Opcional: Se puede añadir una sección para notificaciones o despliegue en caso de ser necesario.
+#notifications:
+#  email:
+#    recipients:
+#      - correo_electronico
