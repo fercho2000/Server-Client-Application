@@ -2,15 +2,17 @@ language: java
 jdk:
   - openjdk11
 
-before_install:
-  - chmod +x gradlew
+# Opcional: Se puede añadir una etapa de instalación si se requiere realizar alguna configuración adicional.
+#install:
+#  - comando_de_instalacion
 
-# Comandos de compilación y pruebas utilizando Gradle 3.2.0
+# Comandos de compilación, pruebas y otras etapas del proceso de CI
 script:
-  - ./gradlew compileJava
-  - ./gradlew test
-Opcional: Se puede añadir una sección para notificaciones o despliegue en caso de ser necesario.
-notifications:
-  email:
-    recipients:
-      - xepohef106@anomgo.com
+  - mvn compile
+  - mvn test
+# Opcional: Se puede añadir una sección para notificaciones o despliegue en caso de ser necesario.
+#notifications:
+#  email:
+#    recipients:
+#      - correo_electronico
+
