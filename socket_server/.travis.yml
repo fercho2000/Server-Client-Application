@@ -9,8 +9,8 @@ before_install:
 script:
   - ./gradlew compileJava
   - ./gradlew test
-# Opcional: Se puede añadir una sección para notificaciones o despliegue en caso de ser necesario.
-#notifications:
-#  email:
-#    recipients:
-#      - correo_electronico
+Opcional: Se puede añadir una sección para notificaciones o despliegue en caso de ser necesario.
+notifications:
+  email:
+    recipients:
+      - xepohef106@anomgo.com
